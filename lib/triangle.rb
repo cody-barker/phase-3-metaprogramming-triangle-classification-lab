@@ -12,7 +12,7 @@ class Triangle
     raise TriangleError unless sides_positive(l1, l2, l3) && inequality(l1, l2, l3)
     if l1 == l2 && l2 == l3 then :equilateral
     elsif l1 == l2 || l2 == l3 || l1 == l3 then :isosceles
-    elsif l1 != l2 && l2 != l3 then :scalene
+    else :scalene
     end
   end
 
